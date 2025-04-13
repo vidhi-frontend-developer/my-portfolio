@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    position: relative;
+}
+.navbar::after  { content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 40%, rgba(255, 255, 255, 0) 100%) !important;
+    height: 300px;
+    z-index: -1;
+}
+.navbar img.logo { max-width: 200px;}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
+    transition: 0.5s;
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+}

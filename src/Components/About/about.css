@@ -1,0 +1,113 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 170px 50px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    position: relative;
+}
+.margin-bot-50 { margin-bottom: 50px;}
+.about-title {
+    position: relative;
+}
+.about-title h2 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.about-sections {
+    display: flex;
+    gap: 80px;
+}
+.about-left img { max-width: 400px; }
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+.about-para p { font-size: 18px; font-style: normal;}
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.about-skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+.about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.about-desc { background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;}
+.about-desc p  { font-size: 18px;}
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+.about-achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.about-achievement h4 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p { font-size: 20px; font-weight: 600;}
+.hero-video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2; /* Optional for subtle effect */
+  }
