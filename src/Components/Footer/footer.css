@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 50px 60px;
+    background: url('../../assets/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 5px solid #b415FF;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+.footer img.logo { max-width: 160px; margin: 0 auto 20px;}
+.footer-top-left p {
+    max-width: 400px; font-size: 20px;
+}
+.footer-top-right {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer-email-input {
+    display: flex;
+    padding: 20px 80px 20px 30px;
+    gap: 30px;
+    border-radius: 50px;
+    background: #32323B;
+}
+.footer-email-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: outfit;
+    color: #a0a0a0;
+}
+.footer-subscribe { border: none; color: #fff; font-size: 18px; transition: 0.5s; padding: 22px 45px; border-radius: 50px; background: linear-gradient(264deg, #df8908 -5.09%, #b415FF 106.88%); cursor: pointer;}
+.footer-subscribe:hover { transform: scale(1.05);}
+.footer-bottom { text-align: center; margin-bottom: 30px;}
+.footer hr { border:0.1px solid #222}

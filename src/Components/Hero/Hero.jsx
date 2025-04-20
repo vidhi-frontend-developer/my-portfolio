@@ -5,7 +5,7 @@ import heroVideo from '../../assets/video1.mp4'
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       {/* Optional: Background video */}
       <video className='hero-video' autoPlay loop muted playsInline>
         <source src={heroVideo} type="video/mp4" />

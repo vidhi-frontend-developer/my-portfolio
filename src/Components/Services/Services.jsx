@@ -7,7 +7,7 @@ import heroVideo from '../../assets/video6.mp4'
 
 const Services = () => {
   return (
-    <div className="services-container-block">
+    <div className="services-container-block" id='services'>
         <video className='hero-video3' autoPlay loop muted playsInline>
             <source src={heroVideo} type="video/mp4" />
         </video>

@@ -5,7 +5,7 @@ import profile_img from '../../assets/profile.jpg'
 import heroVideo from '../../assets/video5.mp4'
 const About = () => {
   return (
-    <div className='about-container'>
+    <div className='about-container' id='about'>
       <video className='hero-video2' autoPlay loop muted playsInline>
               <source src={heroVideo} type="video/mp4" />
             </video>
