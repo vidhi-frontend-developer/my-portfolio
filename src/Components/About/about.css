@@ -111,3 +111,26 @@
     z-index: -1;
     opacity: 0.2; /* Optional for subtle effect */
   }
+
+  @media(max-width:768px) {
+    .about {
+        gap: 30px;
+        margin: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .about-title h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title h2 { padding: 0 20px; font-size: 50px;}
+    .about-sections { flex-direction: column; gap: 30px;}
+    .about-left img { max-width: 300px;}
+    .about-title img { max-width: 130px;}
+    .about-para { font-size: 18px; text-align: center;}
+    .about-desc { padding: 20px 15px;}
+    .about-skill p { text-align: left;}
+    .about-achievement h4 { font-size: 40px;}
+    .about-achievement p { font-size: 18px;}
+    .about-achievements { margin-bottom: 30px; flex-direction: column; gap: 30px;}
+  }

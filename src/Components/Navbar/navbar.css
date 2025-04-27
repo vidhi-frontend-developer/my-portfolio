@@ -1,21 +1,31 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 110px;
     position: relative;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+    gap: 50px;
+    animation-name: stickyh1; -webkit-animation-name: stickyh1; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-timing-function: ease; -webkit-animation-timing-function: ease;
 }
+@keyframes stickyh1 { 0% { transform: translateY(5%); } 50% { transform: translateY(0%); } }
+	@-webkit-keyframes stickyh1 { 0% { -webkit-transform: translateY(5%); } 50% { -webkit-transform: translateY(0%); } }
 .navbar::after  { content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 40%, rgba(255, 255, 255, 0) 100%) !important;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 40%, rgba(255, 255, 255, 0) 100%) !important;
     height: 300px;
     z-index: -1;
 }
-.navbar img.logo { max-width: 200px;}
+.navbar img.logo { max-width: 200px; transition: 0.5s ease-in-out;}
+.navbar img.logo-ic { display: none; transition: 0.5s ease-in-out;}
+.sticky-fixed img.logo-ic { display: block; transition: 0.5s ease-in-out; max-width: 80px;}
+.sticky-fixed img.logo { display: none; transition: 0.5s ease-in-out;}
 .nav-menu {
     display: flex;
     align-items: center;
@@ -42,3 +52,21 @@
 }
 .nav-menu li img { display: flex; margin: auto;}
 .anchor-link { text-decoration: none; color: #fff;}
+.nav-mob-close, .nav-mob-open { display: none;}
+.sticky-fixed { padding: 10px; position: fixed; left: 0; right: 0; top: 0; z-index: 1020; -webkit-box-shadow: rgba(255,255,255,.2) 1px 0px 5px; box-shadow: rgba(255,255,255,.2) 1px 0px 5px; background:#000; -webkit-transform: translateY(0%); transform: translateY(0%); animation-name: stickyh; -webkit-animation-name: stickyh; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-timing-function: ease; -webkit-animation-timing-function: ease;  }
+	@keyframes stickyh { 0% { transform: translateY(-100%); } 100% { transform: translateY(0%); } }
+	@-webkit-keyframes stickyh { 0% { -webkit-transform: translateY(-100%); } 100% { -webkit-transform: translateY(0%); } }
+.sticky-fixed img.logo { max-width: 140px; transition: 0.5s ease-in-out;}
+.sticky-fixed::after { display: none;}
+@media(max-width:768px) {
+    .navbar { padding: 15px; justify-content: space-between; width: auto;}
+    .nav-connect { display: none;}
+    .nav-mob-open { position: fixed; display: block; right: 30px; cursor: pointer; max-width: 25px; background: linear-gradient(267deg, #da7c25 0.36%, #7c1797 102.6%); padding: 10px; z-index: 5;}
+    .nav-mob-close { position: relative; display: block; top: 10px; left: 150px; width: 18px; cursor: pointer;}
+    .nav-menu { position: fixed; align-items: start; flex-direction: column; top:0; gap: 10px; width: 180px; height: 100%; background:linear-gradient(267deg, #000000 0.36%, #530750 102.6%); z-index: 10; transition: right 0.5s; right: -350px; height: 100vh;}
+    .nav-menu li { font-size: 18px; padding-left: 15px; flex-direction: row; gap: 10px;}
+    .navbar img.logo { max-width: 140px;}
+    .navbar::after { display: none;}
+    .navbar { animation: none;}
+    .sticky-fixed img.logo-ic { max-width: 55px;}
+}
