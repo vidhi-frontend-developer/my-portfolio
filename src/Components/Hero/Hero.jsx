@@ -3,7 +3,7 @@ import './hero.css'
 import profile_img from '../../assets/profile.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import heroVideo from '../../assets/video1.mp4'
-import resume from '../../assets/Vidhi_Khatsuria_Resume.pdf';
+import resume from '../../assets/vidhi_updated_resume_2026.pdf';
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="hero-action">
         <AnchorLink className='anchor-link' offset={110} href='#contact'><span className="hero-connect">Connect With Me</span></AnchorLink>
-        <a onClick={() => window.open('src/assets/Vidhi_Khatsuria_Resume.pdf', '_blank')} className="hero-resume">My Resume </a>
+        <a onClick={() => window.open('src/assets/vidhi_updated_resume_2026.pdf', '_blank')} className="hero-resume">My Resume </a>
       </div>
     </div>
   )
