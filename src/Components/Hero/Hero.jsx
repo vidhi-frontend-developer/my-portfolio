@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="hero-action">
         <AnchorLink className='anchor-link' offset={110} href='#contact'><span className="hero-connect">Connect With Me</span></AnchorLink>
-        <a onClick={() => window.open('src/assets/vidhi_updated_resume_2026.pdf', '_blank')} className="hero-resume">My Resume </a>
+        <a href={resume} target="_blank" rel="noopener noreferrer" className="hero-resume">My Resume</a>
       </div>
     </div>
   )
